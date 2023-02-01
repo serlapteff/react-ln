@@ -7,6 +7,7 @@ import {MainPageAsync} from "./pages/MainPage/MainPage.async";
 import {AboutAsync} from "./pages/About/About.async";
 import {ThemeContext} from "./theme/ThemeContext";
 import {useTheme} from "./theme/useTheme";
+import {classNames} from "./helpers/classNames/classNames";
 
 export enum Theme {
     DEFAULT = 'default',
@@ -15,10 +16,10 @@ export enum Theme {
 
 const App = () => {
     const {theme, toggleTheme} = useTheme()
-    console.log('app')
+    const classes = classNames('app', {}, [theme])
 
     return (
-        <div className={`app ${theme}`}>
+        <div className={classes}>
             <div>
                 <button onClick={toggleTheme}>toggle</button>
             </div>
