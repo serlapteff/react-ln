@@ -12,14 +12,27 @@ export const RouthPath: Record<AppRoutes, string> = {
     [AppRoutes.ABOUT]: '/about'
 }
 
-export const routeConfig: Record<AppRoutes, RouteProps> = {
-    [AppRoutes.MAIN]: {
-        path: RouthPath.main,
-        element: <MainPage/>
-    },
-    [AppRoutes.ABOUT]: {
-        path: RouthPath.about,
-        element: <About/>
-    },
-}
+// export const routeConfig: Record<AppRoutes, RouteProps> = {
+//     [AppRoutes.MAIN]: {
+//         path: RouthPath.main,
+//         element: <MainPage/>
+//     },
+//     [AppRoutes.ABOUT]: {
+//         path: RouthPath.about,
+//         element: <About/>
+//     },
+// }
 
+// (RouteProps & { title: AppRoutes })[]
+export const routeConfig: RouteProps[] = [
+    {
+        path: RouthPath.main,
+        element: <MainPage/>,
+        // title: AppRoutes.MAIN
+    },
+    {
+        path: RouthPath.about,
+        element: <About/>,
+        // title: AppRoutes.MAIN
+    }
+]
