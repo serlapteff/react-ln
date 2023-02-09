@@ -1,8 +1,12 @@
 .app.default {
   --bg-color: #efefef;
+  --inverted-bg-color: #333;
 
-  --primary-color: #006fff;
-  --secondary-color: #052ba2;
+  --primary-color: #050505;
+  --secondary-color: #006fff;
 
-  --link-color: blue;
+  --inverted-primary-color: #0f0;
+  --inverted-secondary-color: #049804;
+
+  --default-link-color: #f8581d;
 }
