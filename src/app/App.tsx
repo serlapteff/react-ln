@@ -5,6 +5,8 @@ import {useTheme} from "app/providers/ThemeProvider";
 import {AppRouter} from "app/providers/router";
 import {NavBar} from "widgets/NavBar";
 import {Sidebar} from "widgets/Sidebar";
+import {Suspense} from "react";
+import {useTranslation} from "react-i18next";
 
 const App = () => {
     const {theme, toggleTheme} = useTheme()
@@ -12,14 +14,16 @@ const App = () => {
 
     return (
         <div className={classes}>
-            <header>
-                <NavBar/>
-            </header>
+            <Suspense fallback="">
+                <header>
+                    <NavBar/>
+                </header>
 
-            <main className="content">
-                <Sidebar/>
-                <AppRouter />
-            </main>
+                <main className="content">
+                    <Sidebar/>
+                    <AppRouter />
+                </main>
+            </Suspense>
         </div>
     );
 };
