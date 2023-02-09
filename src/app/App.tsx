@@ -4,6 +4,7 @@ import {classNames} from "shared/lib/classNames/classNames";
 import {useTheme} from "app/providers/ThemeProvider";
 import {AppRouter} from "app/providers/router";
 import {NavBar} from "widgets/NavBar";
+import {Sidebar} from "widgets/Sidebar";
 
 const App = () => {
     const {theme, toggleTheme} = useTheme()
@@ -11,10 +12,14 @@ const App = () => {
 
     return (
         <div className={classes}>
-            <div >
+            <header>
                 <NavBar/>
-            </div>
-           <AppRouter />
+            </header>
+
+            <main className="content">
+                <Sidebar/>
+                <AppRouter />
+            </main>
         </div>
     );
 };
