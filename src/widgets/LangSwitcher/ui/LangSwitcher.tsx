@@ -7,7 +7,7 @@ import { type FC } from 'react'
 interface LangSwitcherProps {
   className?: string
 }
-export const LangSwitcher: FC<LangSwitcherProps> = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
   const { t, i18n } = useTranslation()
 
   const toggleLanguage = (): void => {

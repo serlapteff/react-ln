@@ -20,7 +20,9 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
-    '@typescript-eslint/naming-convention': 'off'
+    '@typescript-eslint/naming-convention': 'off',
+    // '@typescript-eslint/indent': [2, 4],
+    // 'react/jsx-indent': [2, 4]
   },
   globals: {
     __IS_DEV__: true
