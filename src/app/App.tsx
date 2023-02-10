@@ -1,18 +1,16 @@
 import 'app/styles/index.scss'
-import {Link} from "react-router-dom";
-import {classNames} from "shared/lib/classNames/classNames";
-import {useTheme} from "app/providers/ThemeProvider";
-import {AppRouter} from "app/providers/router";
-import {NavBar} from "widgets/NavBar";
-import {Sidebar} from "widgets/Sidebar";
-import {Suspense} from "react";
-import {useTranslation} from "react-i18next";
+import { classNames } from 'shared/lib/classNames/classNames'
+import { useTheme } from 'app/providers/ThemeProvider'
+import { AppRouter } from 'app/providers/router'
+import { NavBar } from 'widgets/NavBar'
+import { Sidebar } from 'widgets/Sidebar'
+import { type FC, Suspense } from 'react'
 
-const App = () => {
-    const {theme, toggleTheme} = useTheme()
-    const classes = classNames('app', {}, [theme])
+const App: FC = () => {
+  const { theme } = useTheme()
+  const classes = classNames('app', {}, [theme])
 
-    return (
+  return (
         <div className={classes}>
             <Suspense fallback="">
                 <header>
@@ -20,12 +18,12 @@ const App = () => {
                 </header>
 
                 <main className="content">
-                    <Sidebar/>
+                    <Sidebar />
                     <AppRouter />
                 </main>
             </Suspense>
         </div>
-    );
-};
+  )
+}
 
-export default App;
+export default App
