@@ -8,7 +8,7 @@ import { LangSwitcher } from 'widgets/LangSwitcher'
 interface SidebarProps {
   className?: string
 }
-export const Sidebar: FC<SidebarProps> = ({ className }: SidebarProps) => {
+export const Sidebar: FC<SidebarProps> = ({ className = '' }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState(false)
 
   const toggle: VoidFunction = () => {

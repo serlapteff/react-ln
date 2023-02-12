@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 interface NavBarProps {
   className?: string
 }
-export const NavBar: FC<NavBarProps> = ({ className }) => {
+export const NavBar: FC<NavBarProps> = ({ className = '' }) => {
   const { t } = useTranslation('translation')
   return (
         <div className={classNames(cls.NavBar, {}, [className])}>
