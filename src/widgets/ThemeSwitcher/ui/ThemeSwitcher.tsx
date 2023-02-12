@@ -8,15 +8,15 @@ import ThemeDefault from 'shared/assets/icons/sun.svg'
 import { type FC } from 'react'
 
 interface ThemeSwitcherProps {
-  classnames?: string
+  className?: string
 }
-export const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ classnames }: ThemeSwitcherProps) => {
+export const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ className = '' }: ThemeSwitcherProps) => {
   const { theme, toggleTheme } = useTheme()
-  const classes = classNames(cls.ThemeSwitcher, {}, [classnames])
+  const classes = classNames(cls.ThemeSwitcher, {}, [className])
   return (
-        <Button theme={ThemeButton.CLEAR} onClick={toggleTheme} className={classes}>
-            {/* <ThemeIcon className={cls[theme]}  /> */}
-            {theme === Theme.DEFAULT ? <ThemeDefault/> : <ThemeDark/>}
-        </Button>
+      <Button theme={ThemeButton.CLEAR} onClick={toggleTheme} className={classes}>
+          {/* <ThemeIcon className={cls[theme]}  /> */}
+          {theme === Theme.DEFAULT ? <ThemeDefault/> : <ThemeDark/>}
+      </Button>
   )
 }

@@ -11,18 +11,18 @@ const App: FC = () => {
   const classes = classNames('app', {}, [theme])
 
   return (
-        <div className={classes}>
-            <Suspense fallback="">
-                <header>
-                    <NavBar/>
-                </header>
+      <div className={classes}>
+          <Suspense fallback="">
+              <header>
+                  <NavBar/>
+              </header>
 
-                <main className="content">
-                    <Sidebar />
-                    <AppRouter />
-                </main>
-            </Suspense>
-        </div>
+              <main className="content">
+                  <Sidebar />
+                  <AppRouter />
+              </main>
+          </Suspense>
+      </div>
   )
 }
 

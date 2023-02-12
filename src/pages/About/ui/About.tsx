@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next'
 const About: FC = () => {
   const { t } = useTranslation('about')
   return (
-        <div>
-            {t('О компании')}
-        </div>
+      <div>
+          {t('О компании')}
+      </div>
   )
 }
 
