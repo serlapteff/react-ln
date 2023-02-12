@@ -1,32 +1,33 @@
-//@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-@import 'normalize';
+@import "normalize";
 @import "variables/global";
 @import "themes/default";
 @import "themes/dark";
 
 .app {
-  font: var(--font-m);
-  //padding: 20px;
+    font: var(--font-m);
 
-  background: var(--bg-color);
-  color: var(--primary-color);
+    //padding: 20px;
 
-  //height: 100vh;
+    background: var(--bg-color);
+    color: var(--primary-color);
 
-  //a {
-  //  color: var(--link-color);
-  //
-  //  &:hover {
-  //    color: var(--secondary-color);
-  //  }
-  //}
+    //height: 100vh;
+
+    //a {
+    //    color: var(--link-color);
+    //
+    //    &:hover {
+    //        color: var(--secondary-color);
+    //    }
+    //}
 }
 
 .content {
-  display: flex;
-  height: calc(100vh - var(--nav-bar-height));
+    display: flex;
+    height: calc(100vh - var(--nav-bar-height));
 }
+
 .page-wrap {
-  flex-grow: 1;
-  padding: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }

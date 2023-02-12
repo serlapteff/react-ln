@@ -1,0 +1,10 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "indentation": [4],
+    "selector-class-pattern": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "scss/comment-no-empty": null
+  },
+  "ignoreFiles": ["build/css/**.css"]
+}

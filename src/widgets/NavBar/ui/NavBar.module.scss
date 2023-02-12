@@ -1,18 +1,19 @@
 .NavBar {
-  //width: 100%;
-  height: var(--nav-bar-height);
-  background: var(--inverted-bg-color);
-  //padding: 20px;
-  display: flex;
-  align-items: center;
+    //width: 100%;
+    height: var(--nav-bar-height);
+    background: var(--inverted-bg-color);
+
+    //padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .links {
-  margin-left: auto;
-  margin-right: 20px;
+    margin-left: auto;
+    margin-right: 20px;
 
-  a {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
+    a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 }

@@ -1,10 +1,11 @@
 .ThemeSwitcher {
-  fill: #000;
+    fill: #000;
 }
+
 .default {
-  fill: var(--default-link-color)
+    fill: var(--default-link-color);
 }
 
 .dark {
-  fill: var(--dark-link-color)
+    fill: var(--dark-link-color);
 }
