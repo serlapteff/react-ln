@@ -16,7 +16,6 @@ const App: FC = () => {
               <header>
                   <NavBar/>
               </header>
-
               <main className="content">
                   <Sidebar />
                   <AppRouter />
