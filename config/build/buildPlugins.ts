@@ -19,7 +19,7 @@ export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPl
         })
     ]
     if (isDev) {
-        plugins.push(new ReactRefreshPlugin())
+        plugins.push(new ReactRefreshPlugin({ overlay: false }))
     }
 
     return plugins
