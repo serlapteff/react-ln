@@ -5,21 +5,21 @@ import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import { type FC } from 'react'
 
 interface LangSwitcherProps {
-  className?: string
+    className?: string
 }
 export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
-  const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation()
 
-  const toggleLanguage = (): void => {
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru').then(r => r).catch(e => { console.log(e) })
-  }
+    const toggleLanguage = (): void => {
+        i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru').then(r => r).catch(e => { console.log(e) })
+    }
 
-  return (
-      <Button
-          theme={ThemeButton.CLEAR}
-          onClick={toggleLanguage}
-          className={classNames(cls.LangSwitcher, {}, [className])}>
-          {t('Язык')}
-      </Button>
-  )
+    return (
+        <Button
+            theme={ThemeButton.CLEAR}
+            onClick={toggleLanguage}
+            className={classNames(cls.LangSwitcher, {}, [className])}>
+            {t('Язык')}
+        </Button>
+    )
 }

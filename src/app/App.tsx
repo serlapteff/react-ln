@@ -7,22 +7,22 @@ import { Sidebar } from 'widgets/Sidebar'
 import { type FC, Suspense } from 'react'
 
 const App: FC = () => {
-  const { theme = Theme.DEFAULT } = useTheme()
-  const classes = classNames('app', {}, [theme])
+    const { theme = Theme.DEFAULT } = useTheme()
+    const classes = classNames('app', {}, [theme])
 
-  return (
-      <div className={classes}>
-          <Suspense fallback="">
-              <header>
-                  <NavBar/>
-              </header>
-              <main className="content">
-                  <Sidebar />
-                  <AppRouter />
-              </main>
-          </Suspense>
-      </div>
-  )
+    return (
+        <div className={classes}>
+            <Suspense fallback="">
+                <header>
+                    <NavBar/>
+                </header>
+                <main className="content">
+                    <Sidebar />
+                    <AppRouter />
+                </main>
+            </Suspense>
+        </div>
+    )
 }
 
 export default App

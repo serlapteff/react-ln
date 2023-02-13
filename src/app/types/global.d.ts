@@ -5,10 +5,10 @@ declare module '*.scss' {
 }
 
 declare module '*.svg' {
-  const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>
-  // import React from "react";
-  // const content: React.VFC<React.SVGProps<SVGSVGElement>>;
-  export default content
+    const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>
+    // import React from "react";
+    // const content: React.VFC<React.SVGProps<SVGSVGElement>>;
+    export default content
 }
 declare module '*.png';
 declare module '*.jpg';
