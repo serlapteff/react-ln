@@ -36,6 +36,9 @@ export default {
     ],
     testPathIgnorePatterns: [
         '\\\\node_modules\\\\'
+    ],
+    modulePaths: [
+        '<rootDir>src'
     ]
 
     // Indicates whether the coverage information should be collected while executing the test
