@@ -15,7 +15,8 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-#      - uses: actions/chekout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Node.js  ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
