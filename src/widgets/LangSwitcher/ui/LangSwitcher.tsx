@@ -16,7 +16,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className = '' }) => {
 
     return (
         <Button
-            theme={ThemeButton.CLEAR}
+            theme={ThemeButton.DEFAULT}
             onClick={toggleLanguage}
             className={classNames(cls.LangSwitcher, {}, [className])}>
             {t('Язык')}

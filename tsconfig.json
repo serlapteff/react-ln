@@ -43,6 +43,7 @@
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./config",
-    "webpack.config.ts"
-  ]
+    "webpack.config.ts",
+    "./config/storybook/webpack.config.ts"
+  ],
 }

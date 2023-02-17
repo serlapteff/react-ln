@@ -10,8 +10,7 @@
 
     background: var(--bg-color);
     color: var(--primary-color);
-
-    //height: 100vh;
+    height: 100vh;
 
     //a {
     //    color: var(--link-color);
@@ -21,6 +20,10 @@
     //    }
     //}
 }
+
+//button {
+//    background-color: var(--inverted-primary-color);
+//}
 
 .content {
     display: flex;
