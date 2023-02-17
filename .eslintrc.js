@@ -11,6 +11,12 @@ module.exports = {
         'plugin:i18next/recommended'
     ],
     overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off'
+            }
+        }
     ],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -44,7 +50,7 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': [2, { markupOnly: true }]
+        'i18next/no-literal-string': [2, { markupOnly: true, ignoreAttribute: ['data-testid'] }]
     },
     globals: {
         __IS_DEV__: true
