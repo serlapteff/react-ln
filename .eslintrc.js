@@ -32,6 +32,7 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/indent': [2, 4],
         '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/consistent-type-assertions': 'off', // ругался в stories
         // 'react/jsx-indent': [2, 4],
 
         'react/jsx-indent': [2, 4],
