@@ -6,8 +6,33 @@
     background-color: var(--inverted-bg-color);
 }
 
-.collapsed {
-    width: var(--sidebar-width-collpased);
+.navItems {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    white-space: nowrap;
+
+    span {
+        margin-left: 10px;
+        transition: 0.3s opacity ease-in-out;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
 }
 
 .switchers {
@@ -20,4 +45,31 @@
 
 .langSwitcher {
     margin-left: 15px;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collpased);
+
+    .navItem {
+        //justify-content: center;
+        span {
+            opacity: 0;
+            width: 0;
+        }
+    }
+
+    .switchers {
+        flex-direction: column;
+    }
+
+    .langSwitcher {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+.collapsedBtn {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
 }

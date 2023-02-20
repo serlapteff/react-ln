@@ -1,6 +1,6 @@
 import { type ComponentStory, type ComponentMeta } from '@storybook/react'
 
-import { Button, ThemeButton } from './Button'
+import { Button, ButtonSize, ButtonVariant } from './Button'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 
@@ -22,18 +22,75 @@ Default.args = {
 export const Clear = Template.bind({})
 Clear.args = {
     children: 'Text',
-    theme: ThemeButton.CLEAR
+    theme: ButtonVariant.CLEAR
 }
 
 export const Outline = Template.bind({})
 Outline.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ButtonVariant.OUTLINE
+}
+
+export const OutlineL = Template.bind({})
+OutlineL.args = {
+    children: 'Text',
+    theme: ButtonVariant.OUTLINE,
+    size: ButtonSize.L
+}
+
+export const OutlineXL = Template.bind({})
+OutlineXL.args = {
+    children: 'Text',
+    theme: ButtonVariant.OUTLINE,
+    size: ButtonSize.XL
 }
 
 export const OutlineDark = Template.bind({})
 OutlineDark.args = {
     children: 'Text',
-    theme: ThemeButton.OUTLINE
+    theme: ButtonVariant.OUTLINE
 }
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)]
+
+export const Background = Template.bind({})
+Background.args = {
+    children: 'Text',
+    theme: ButtonVariant.BACKGROUND
+}
+
+export const BackgroundInvert = Template.bind({})
+BackgroundInvert.args = {
+    children: 'Text',
+    theme: ButtonVariant.BACKGROUND_INVERT
+}
+
+export const Squire = Template.bind({})
+Squire.args = {
+    children: '›',
+    theme: ButtonVariant.BACKGROUND_INVERT,
+    squire: true
+}
+//
+// export const SizeM = Template.bind({})
+// SizeM.args = {
+//     children: '›',
+//     theme: ButtonVariant.BACKGROUND_INVERT,
+//     size: ButtonSize.M,
+//     squire: true
+// }
+
+export const SquireSizeL = Template.bind({})
+SquireSizeL.args = {
+    children: '›',
+    theme: ButtonVariant.BACKGROUND_INVERT,
+    size: ButtonSize.L,
+    squire: true
+}
+
+export const SquireSizeXL = Template.bind({})
+SquireSizeXL.args = {
+    children: '›',
+    theme: ButtonVariant.BACKGROUND_INVERT,
+    size: ButtonSize.XL,
+    squire: true
+}

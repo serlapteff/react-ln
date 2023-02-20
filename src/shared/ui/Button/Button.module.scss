@@ -1,6 +1,22 @@
 .Button {
     cursor: pointer;
     color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
+
+.size_xl {
+    font: var(--font-xl);
 }
 
 .clear {
@@ -8,11 +24,42 @@
     border: 0;
     background: none;
     outline: none;
+    color: var(--inverted-primary-color);
 }
 
 .outline {
-    padding: 10px;
     border: 1px solid var(--primary-color);
     background: none;
     color: var(--primary-color);
+}
+
+.background {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.backgroundInvert {
+    background-color: var(--inverted-bg-color);
+    color: var(--inverted-primary-color);
+    border: none;
+}
+
+.squire {
+    padding: 0;
+}
+
+.squire.size_m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.squire.size_l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.squire.size_xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
 }
